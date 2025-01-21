@@ -1,21 +1,20 @@
 function linkedList(num){
     let start = {
         val: "val",
-        next: "null"
+        next: null
     }
-    let current = start
 
-    for(let i=0; i < num; i++){
+    for(let i=0; i <=num; i++){
         let x = {
             val: i,
-            next: "null"
+            next: null
         }
 
-        current.next = start
-        current = x
+        x.next = start
+        start = x
     }
 
-    return current;
+    return start;
 }
 
 const list = linkedList(5)
